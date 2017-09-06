@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "description": "",
+  "private": true,
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-stylus": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-php": "*",
+    "jeet": "*",
+    "rupture": "*"
+  },
+  "dependencies": {
+    "fullpage.js": "^2.9.4",
+    "history.js": "https://github.com/browserstate/history.js",
+    "lazysizes": "^4.0.0-rc3",
+    "normalize.css": "^7.0.0"
+  }
+}

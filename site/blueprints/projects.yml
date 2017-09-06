@@ -1,0 +1,23 @@
+title: Projects
+pages:
+  template:
+    - project
+  num:
+    mode: default
+    display: null
+  max: null
+  limit: "50"
+  sort: false
+  hide: false
+files: false
+fields:
+  title:
+    label: Title
+    type: title
+  text:
+    label: Site description
+    type: textarea
+  categories:
+    label: Categories
+    type: taglist
+    placeholder: Add a category

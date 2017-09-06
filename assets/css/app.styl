@@ -1,0 +1,119 @@
+@import 'nib'
+@import '../../node_modules/jeet/jeet.styl'
+@import '_mixins.styl'
+
+// Media queries
+$xl = 1600px
+$lg = 1260px
+$md = 1023px
+$sm = 767px
+
+// Colors
+$primary ?= #fff
+$secondary ?= #000
+$accent ?= #ff0000
+$grey ?= #858585
+
+// Metrics
+$padding = 4rem
+$kinetic = cubic-bezier(0.77, 0, 0.175, 1)
+
+// CSS Reset
+global-reset()
+
+// webfont('?', '?', true, 'normal')
+
+font-bold()
+	font-family "", Helvetica Neue, Arial, sans-serif
+font-light()
+	font-family "", Helvetica Neue, Arial, sans-serif
+
+body,html
+	width 100%
+	-webkit-text-size-adjust 100%
+	background $primary
+
+html
+	font-size 62.5%
+
+body
+	font-light()
+	font-size 1vw
+	line-height 1
+	text-rendering optimizeLegibility
+	font-smoothing()
+
+@import "_loaders"
+
+h1, .lead, #landing
+	font-size 2.5vw
+
+.project-title
+	font-size 4vw
+
+.grey
+	color $grey
+
+strong
+	font-weight bold
+
+p
+	margin-bottom 1em
+	line-height 100%
+
+p:last-child
+	margin-bottom 0
+
+::selection
+	background $secondary
+	
+::-moz-selection
+	background $secondary
+
+*
+	hideselect()
+	box-sizing(border-box)
+
+a, a:hover, a:visited, a:focus
+	color inherit
+	text-decoration none
+	cursor pointer
+
+header
+	position fixed
+	top 0
+	left 0
+	width 100%
+	background $primary
+	padding $padding
+	z-index 100
+	#site-title
+		font-bold()
+
+#wrapper
+	padding 0 $padding
+
+section
+	margin-top ($padding*3)
+	min-height 100vh
+
+#landing
+	color $grey
+
+#projects
+	.project
+		.project-header
+			display inline-flex
+			span(1)
+			.year
+				margin 0.8em 0.9em
+		.project-title
+			&::before
+				content '+'
+		.project-content
+			display inline-flex
+			flex-wrap wrap
+			margin-top 5px
+			.project-image
+				margin-right 5px
+				margin-bottom 5px
